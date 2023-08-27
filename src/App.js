@@ -1,32 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { Layout } from "./components/Layout";
 
-const App = () => {
-  const [images, setImages] = useState();
-
-  useEffect(() => {
-    fetch('images?limit=10')
-      .then(res => res.json())
-      .then(data => {
-        console.log('Success:', data);
-        setImages(data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-  }, []);
-
+function App() {
   return (
-    <div className='app'>
-      {
-        images && images.map(img => (
-          <div key={img.id} >
-            <img src={`${img.url}.jpg`} alt=''/>
-            <img src={`${img.user.profile_image}.webp`} alt=''/>
-          </div>
-        ))
-      }
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
