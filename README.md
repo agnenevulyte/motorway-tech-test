@@ -1,9 +1,13 @@
-
 # Motorway UI Test
-
 
 Welcome to the Motorway UI technical test. This test focuses on user experience, and your skills with HTML, CSS, a11y and leveraging browser APIs.
 
+## What was done
+
+- I've introduced a new responsive UI to showcase the images received from the API. This UI design ensures that images are displayed optimally across various devices and screen sizes.
+- A new subscription form feature has been developed and integrated into the UI. This form empowers users to effortlessly subscribe for future updates.
+- Integrated a page routing that allows the application to showcase two separate pages. This enhancement facilitates improved navigation and user interaction within the app.
+- Added some tests to maintain code quality and reliability.
 
 ## Set up
 
@@ -22,7 +26,6 @@ After this, CRA will open a tab with the app running, usually `localhost:3000`. 
 - The server and CRA are watching the relevant files and will hot reload if any changes are made.
 
 - Feel free to modify or install whatever code you feel is necessary. If installing packages which are wrappers for native browsers APIs please leave a comment explaining why.
-
 
 ## Tasks
 
@@ -48,11 +51,9 @@ Modal to review full size images
 
 Image effects or filters
 
-
 ### 2. Performance
 
 The API that is returning images is rather slow. Show how it can be sped up, and show how you would measure the improvement in performance.
-
 
 ### 3. Forms
 
@@ -66,11 +67,9 @@ Add a form to your app with the following fields. The form doesn't need to submi
 - [ ] Favourite colour
 - [ ] Salary (using a range input)
 
-
 ## Time allowed
 
 We appreciate that your time is valuable and recommend you not spend more than 2 hours on these tasks.
-
 
 ## Notes
 
