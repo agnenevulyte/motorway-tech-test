@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "5.16.5",
-    "@testing-library/react": "14.0.0",
-    "@testing-library/user-event": "14.4.3",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "nodemon": "^2.0.20",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "^18.2.0",
+    "react-lazy-load": "^4.0.1",
+    "react-router-dom": "^6.15.0"
   },
   "proxy": "http://localhost:5000/",
   "scripts": {
@@ -37,6 +38,10 @@
     "nth-check": "^2.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "intersection-observer": "^0.12.2",
     "react-scripts": "^5.0.1"
   }
 }

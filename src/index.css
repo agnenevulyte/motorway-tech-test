@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #1d1d1b;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+button {
+  background-color: #0460cc;
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  height: 42px;
+  min-width: 100px;
+  outline: none;
+}
+
+button:hover {
+  background-color: #1b7fdd;
+}
+
+@media (min-width: 641px) {
+  body {
+    font-size: 16px;
+  }
+  button {
+    padding: 10px 20px;
+    min-width: 112px;
+    height: 48px;
+  }
+}
