@@ -1,6 +1,7 @@
 import React from "react";
 import motorwayLogo from "../assets/Motorway_Logo_Black_RGB.png";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -9,7 +10,9 @@ export const Header = () => {
         <img src={motorwayLogo} alt="Motorway Logo" className="header-logo" />
       </a>
       <div className="contact-us-button">
-        <button>Contact Us</button>
+        <Link to="/form">
+          <button>Contact Us</button>
+        </Link>
       </div>
     </div>
   );
